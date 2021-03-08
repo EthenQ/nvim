@@ -12,7 +12,7 @@ ui['glepnir/galaxyline.nvim'] = {
 }
 
 ui['glepnir/indent-guides.nvim'] = {
-  event = 'BufReadPre',
+  event = 'BufRead',
 }
 
 ui['akinsho/nvim-bufferline.lua'] = {
@@ -30,9 +30,10 @@ ui['kyazdani42/nvim-tree.lua'] = {
   requires = {'kyazdani42/nvim-web-devicons'}
 }
 
-ui['mhinz/vim-signify'] = {
-  event = {'BufReadPre','BufNewFile'},
-  config = conf.vim_signify
+ui['lewis6991/gitsigns.nvim'] = {
+  event = {'BufRead','BufNewFile'},
+  config = conf._gitsigns,
+  requires = {'nvim-lua/plenary.nvim',opt=true}
 }
 
 return ui
