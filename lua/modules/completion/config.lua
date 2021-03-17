@@ -37,9 +37,10 @@ function config.telescope()
   end
   require('telescope').setup {
     defaults = {
-      prompt_prefix = '🍔 ',
+      prompt_prefix = '🔭 ',
       prompt_position = 'top',
       sorting_strategy = 'ascending',
+      results_width = 0.6,
       file_previewer = require'telescope.previewers'.vim_buffer_cat.new,
       grep_previewer = require'telescope.previewers'.vim_buffer_vimgrep.new,
       qflist_previewer = require'telescope.previewers'.vim_buffer_qflist.new,
@@ -61,6 +62,11 @@ function config.vim_sonictemplate()
   vim.g.sonictemplate_vim_template_dir = os.getenv("HOME").. '/.config/nvim/template'
 end
 
+function config.smart_input()
+  require('smartinput').setup {
+    ['go'] = { ';',':=',';' }
+  }
+end
 
 function config.emmet()
   vim.g.user_emmet_complete_tag = 0
