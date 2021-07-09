@@ -8,7 +8,7 @@ tools['kristijanhusak/vim-dadbod-ui'] = {
 }
 
 tools['editorconfig/editorconfig-vim'] = {
-  ft = { 'go','typescript','javascript','vim','rust','zig','c','cpp' }
+  ft = { 'go','typescript','javascript','vim','rust','c','cpp' }
 }
 
 tools['glepnir/prodoc.nvim'] = {
@@ -34,4 +34,11 @@ tools['iamcco/markdown-preview.nvim'] = {
   end
 }
 
+tools['folke/which-key.nvim'] = {
+  config = conf.whichkey
+}
+
+tools['lyokha/vim-xkbswitch'] = {
+  config = conf.vimxkbswitch
+}
 return tools

@@ -54,4 +54,14 @@ function config.vim_vista()
   }
 end
 
+function config.whichkey()
+--   if not packer_plugins['folke/which-key.nvim'].load then
+--     vim.cmd [[packadd folke/which-key.nvim]]
+--   end
+  require("which-key").setup {}
+end
+
+function config.vimxkbswitch()
+  vim.g.XkbSwitchEnabled = 1
+end
 return config
