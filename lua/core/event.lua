@@ -55,6 +55,7 @@ function autocmd.load_autocmds()
   }
 
   autocmd.nvim_create_augroups(definitions)
+  vim.api.nvim_command("autocmd BufNewFile,BufRead * if search('{{.\\+}}', 'nw') | setlocal filetype=gotmpl | endif")
 end
 
 autocmd.load_autocmds()
