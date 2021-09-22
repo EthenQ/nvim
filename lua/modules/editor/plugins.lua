@@ -44,4 +44,8 @@ editor['kana/vim-niceblock']  = {
   opt = true
 }
 
+editor['luochen1990/rainbow'] = {
+  opt = true
+}
+
 return editor
