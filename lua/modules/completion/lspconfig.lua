@@ -116,3 +116,5 @@ for _,server in ipairs(servers) do
     on_attach = enhance_attach
   }
 end
+
+lspconfig.clangd.setup {}

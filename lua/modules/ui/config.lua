@@ -9,8 +9,8 @@ function config.nvim_bufferline()
     options = {
       modified_icon = '✥',
       buffer_close_icon = '',
-      mappings = true,
-      numbers = "ordinal",
+--      mappings = true,
+--      numbers = "ordinal",
       always_show_bufferline = false,
     }
   }
