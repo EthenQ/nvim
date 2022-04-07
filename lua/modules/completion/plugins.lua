@@ -6,7 +6,7 @@ completion['neovim/nvim-lspconfig'] = {
   config = conf.nvim_lsp,
 }
 
-completion['glepnir/lspsaga.nvim'] = {
+completion['tami5/lspsaga.nvim'] = {
   cmd = 'Lspsaga',
 }
 
@@ -46,5 +46,5 @@ completion['mattn/emmet-vim'] = {
   ft = {'html','css','javascript','javascriptreact','vue','typescript','typescriptreact'},
   config = conf.emmet,
 }
-
+completion['github/copilot.vim'] = {}
 return completion

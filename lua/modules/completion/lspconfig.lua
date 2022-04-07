@@ -100,13 +100,13 @@ lspconfig.rust_analyzer.setup {
   capabilities = capabilities,
 }
 
-lspconfig.groovyls.setup {
-  cmd = {
-    "java",
-    "-jar",
-    "/Users/yingkai.qyk/Tools/groovy-language-server/build/libs/groovy-language-server-all.jar"
-  }
-}
+--lspconfig.groovyls.setup {
+--  cmd = {
+--    "java",
+--    "-jar",
+--    "/Users/yingkai.qyk/Tools/groovy-language-server/build/libs/groovy-language-server-all.jar"
+--  }
+--}
 local servers = {
   'yamlls','dockerls','bashls','rust_analyzer','pyright'
 }
