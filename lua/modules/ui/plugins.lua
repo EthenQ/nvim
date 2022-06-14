@@ -34,6 +34,6 @@ package {'lewis6991/gitsigns.nvim',
   requires = {'nvim-lua/plenary.nvim',opt=true}
 }
 
-package {'liuchengxu/vim-which-key',
-  config = conf.vim_which_key
+package { 'folke/which-key.nvim',
+  config = conf.whichkey
 }

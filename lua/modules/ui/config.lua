@@ -12,6 +12,9 @@ function config.nvim_bufferline()
   require('bufferline').setup{
     options = {
       modified_icon = '✥',
+      numbers = function(opts)
+        return string.format('%s.)', opts.ordinal )
+      end,
       buffer_close_icon = '',
       always_show_bufferline = false,
     }
@@ -230,16 +233,19 @@ function config.indent_blakline()
   -- because lazy load indent-blankline so need readd this autocmd
   vim.cmd('autocmd CursorMoved * IndentBlanklineRefresh')
 end
-function config.vim_which_key()
-   vim.g.which_key_map = {
-     f = {name = "Telescope"},
+function config.whichkey()
+  require("which-key").register({
+     f = { name = "file"},
      l = {name = "LSP"},
      b = {name = "Buffers"},
      h = {name = "gitsigns"},
      o = {name = "tools"},
      p = {name = "Packer"},
      s = {name = "Session"}
-   }
-   vim.fn['which_key#register'](' ', vim.g.which_key_map)
+
+  }, { prefix = "<leader>" })
+  require("which-key").setup {
+  }
 end
+
 return config

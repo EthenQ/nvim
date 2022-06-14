@@ -6,7 +6,6 @@ local map_args = bind.map_args
 require('keymap.config')
 
 local plug_map = {
-    ["n|<leader>"]   = map_cr("WhichKey ' '"):with_noremap():with_silent(),
     ["i|<TAB>"]      = map_cmd('v:lua.smart_tab()'):with_expr():with_silent(),
     ["i|<S-TAB>"]    = map_cmd('v:lua.smart_shift_tab()'):with_silent():with_expr(),
     -- person keymap
