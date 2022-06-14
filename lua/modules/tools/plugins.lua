@@ -21,6 +21,9 @@ package {'brooth/far.vim',
     vim.g['far#source'] = 'rg'
   end
 }
+package {'lyokha/vim-xkbswitch',
+  config = conf.vimxkbswitch
+}
 
 -- TODO: write a new markdown preview plugin
 -- package {'iamcco/markdown-preview.nvim',

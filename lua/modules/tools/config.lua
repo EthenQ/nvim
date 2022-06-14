@@ -54,4 +54,7 @@ function config.vim_vista()
   }
 end
 
+function config.vimxkbswitch()
+  vim.g.XkbSwitchEnabled = 1
+end
 return config
