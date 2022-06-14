@@ -230,5 +230,16 @@ function config.indent_blakline()
   -- because lazy load indent-blankline so need readd this autocmd
   vim.cmd('autocmd CursorMoved * IndentBlanklineRefresh')
 end
-
+function config.vim_which_key()
+   vim.g.which_key_map = {
+     f = {name = "Telescope"},
+     l = {name = "LSP"},
+     b = {name = "Buffers"},
+     h = {name = "gitsigns"},
+     o = {name = "tools"},
+     p = {name = "Packer"},
+     s = {name = "Session"}
+   }
+   vim.fn['which_key#register'](' ', vim.g.which_key_map)
+end
 return config

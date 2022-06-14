@@ -33,3 +33,7 @@ package {'lewis6991/gitsigns.nvim',
   config = conf.gitsigns,
   requires = {'nvim-lua/plenary.nvim',opt=true}
 }
+
+package {'liuchengxu/vim-which-key',
+  config = conf.vim_which_key
+}
