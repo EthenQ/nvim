@@ -5,6 +5,7 @@ function config.telescope()
         vim.cmd [[packadd plenary.nvim]]
         vim.cmd [[packadd popup.nvim]]
         vim.cmd [[packadd telescope-fzy-native.nvim]]
+        vim.cmd [[packadd telescope-file-browser.nvim]]
     end
     require('telescope').setup {
         defaults = {
@@ -29,6 +30,7 @@ function config.telescope()
         }
     }
     require('telescope').load_extension('fzy_native')
+    require('telescope').load_extension('file_browser')
     require'telescope'.load_extension('dotfiles')
     require'telescope'.load_extension('gosource')
 end
