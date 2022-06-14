@@ -6,7 +6,7 @@ package {'neovim/nvim-lspconfig',
   config = conf.nvim_lsp,
 }
 
-package {'~/Workspace/lspsaga.nvim', cmd = 'Lspsaga',}
+package {'glepnir/lspsaga.nvim', cmd = 'Lspsaga',}
 
 package {'hrsh7th/nvim-cmp',
   event = 'InsertEnter',
@@ -33,3 +33,5 @@ package {'mattn/emmet-vim',
   ft = {'html','css','javascript','javascriptreact','vue','typescript','typescriptreact'},
   config = conf.emmet,
 }
+
+package {'github/copilot.vim'}
