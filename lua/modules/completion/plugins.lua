@@ -6,7 +6,8 @@ package {'neovim/nvim-lspconfig',
   config = conf.nvim_lsp,
 }
 
-package {'glepnir/lspsaga.nvim', cmd = 'Lspsaga',}
+-- package {'glepnir/lspsaga.nvim', cmd = 'Lspsaga',}
+package {'tami5/lspsaga.nvim', cmd = 'Lspsaga',}
 
 package {'hrsh7th/nvim-cmp',
   event = 'InsertEnter',
