@@ -82,7 +82,6 @@ function config.nvim_tree()
       }
 		},
 		renderer = {
-      root_folder_modifier = ":~",
 			indent_markers = {
 				enable = true,
 				icons = {
