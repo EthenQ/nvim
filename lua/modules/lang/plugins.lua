@@ -11,3 +11,5 @@ package {'nvim-treesitter/nvim-treesitter',
 package {'nvim-treesitter/nvim-treesitter-textobjects', after = 'nvim-treesitter'}
 
 package {'glepnir/smartinput.nvim', ft = 'go',config = conf.smart_input}
+
+package {'p00f/nvim-ts-rainbow', after = 'nvim-treesitter'}
