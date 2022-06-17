@@ -2,7 +2,7 @@ local package = require('core.pack').package
 local conf = require('modules.completion.config')
 
 package {'neovim/nvim-lspconfig',
-  ft = { 'go','lua','sh','rust','c'},
+  ft = { 'go','lua','sh','rust','c', 'python'},
   config = conf.nvim_lsp,
 }
 
@@ -36,3 +36,4 @@ package {'mattn/emmet-vim',
 }
 
 package {'github/copilot.vim'}
+
