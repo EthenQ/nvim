@@ -101,7 +101,7 @@ function config.auto_pairs()
   cmp = require('cmp')
   local cmp_autopairs = require('nvim-autopairs.completion.cmp')
   cmp.event:on( 'confirm_done', cmp_autopairs.on_confirm_done({  map_char = { tex = '' } }))
-  cmp_autopairs.lisp[#cmp_autopairs.lisp+1] = "racket"
+  --cmp_autopairs.lisp[#cmp_autopairs.lisp+1] = "racket"
 end
 
 function config.vim_sonictemplate()
@@ -116,5 +116,10 @@ function config.emmet()
     vim.g.user_emmet_install_command = 0
     vim.g.user_emmet_mode = 'i'
 end
+
+function config.go()
+  require('go').setup()
+end
+
 
 return config

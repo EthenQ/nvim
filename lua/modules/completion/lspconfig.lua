@@ -54,7 +54,14 @@ local enhance_attach = function(client,bufnr)
 end
 
 lspconfig.gopls.setup {
-  cmd = {"gopls","--remote=auto"},
+  cmd = {
+    'gopls', -- share the gopls instance if there is one already
+      '-remote=auto', --[[ debug options ]] --
+      "-logfile=auto",
+      "-debug=:0",
+      '-remote.debug=:0',
+       "-rpc.trace",
+  },
   on_attach = enhance_attach,
   capabilities = capabilities,
   init_options = {

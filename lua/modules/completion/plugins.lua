@@ -1,5 +1,6 @@
 local package = require('core.pack').package
 local conf = require('modules.completion.config')
+--local config = require('config')
 
 package {'neovim/nvim-lspconfig',
   ft = { 'go','lua','sh','rust','c', 'python'},
@@ -37,3 +38,4 @@ package {'mattn/emmet-vim',
 
 package {'github/copilot.vim'}
 
+package {'ray-x/go.nvim', config = conf.go}
