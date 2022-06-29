@@ -36,6 +36,6 @@ package {'mattn/emmet-vim',
   config = conf.emmet,
 }
 
-package {'github/copilot.vim'}
+-- package {'github/copilot.vim'}
 
 package {'ray-x/go.nvim', config = conf.go}
