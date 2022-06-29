@@ -25,6 +25,8 @@ package {'lyokha/vim-xkbswitch',
   config = conf.vimxkbswitch
 }
 
+package {'~/Workspace/dogic-nvim/'}
+
 -- TODO: write a new markdown preview plugin
 -- package {'iamcco/markdown-preview.nvim',
 --   ft = 'markdown',
